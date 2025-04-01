@@ -1,0 +1,16 @@
+import tkinter as tk
+ventana=tk.Tk()
+ventana.title("ricardo rosal castillo")
+ventana.geometry("500x400")
+label=tk.Label(ventana,text="practica 1")
+label.pack()
+boton=tk.Button(ventana,text="haz click",)
+boton.pack()
+entrada=tk.Entry(ventana)
+entrada.pack()
+def holaa():
+    texto=entrada.get()
+    label.config(text="mostrar texto:"+texto)
+boton=tk.Button(ventana,text="mostrar",command=holaa)
+boton.pack()
+ventana.mainloop()
